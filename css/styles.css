@@ -850,6 +850,7 @@ address.footer-adress {
  background-size: contain;
  background-origin: border-box;
  border-radius: 2px;
+ background-image: url('../images/iconcheck.svg');
 }
 
 .form-checkbox {
