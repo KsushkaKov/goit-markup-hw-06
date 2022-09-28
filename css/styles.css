@@ -743,7 +743,7 @@ address.footer-adress {
   width: 18px;
   height: 18px;
   color: currentColor;
-  transition: color var(--time-duration);
+  transition: fill var(--time-duration);
 }
 
 .close-icon:hover,
@@ -759,6 +759,7 @@ address.footer-adress {
 
 .form-field {
   position: relative;
+ 
 }
 
 .form-label {
@@ -776,11 +777,16 @@ address.footer-adress {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   height: 40px;
+  transition: border var(--time-duration);
 }
 
 .form-input:hover,
 .form-input:focus {
   border: 1px solid var(--acent-color);
+}
+
+.form-field:hover .vector-icon {
+  fill: #2196f3;
 }
 
 .form-title {
@@ -807,12 +813,9 @@ address.footer-adress {
   width: 18px;
   height: 18px;
   transform: translateY(-4px);
-  /* transition: transform var(--time-duration); */
+   transition: fill var(--time-duration);
 }
 
-.vector-icon:hover {
-  fill: var(--acent-color);
-}
 
 .form-input.text {
   height: 120px;
@@ -838,13 +841,15 @@ address.footer-adress {
   width: 16px;
   height: 15px;
   border: 2px solid var(--main-color-text);
+  border-radius: 2px;
 }
 
 .checkbox:checked + .icon{
-  border: 0.2px solid #FFFFFF;
+  border: 0.2px solid var(--white-color);
   background-color: var(--acent-color);
  background-size: contain;
  background-origin: border-box;
+ border-radius: 2px;
 }
 
 .form-checkbox {
@@ -860,8 +865,11 @@ address.footer-adress {
   color: var(--secondary-color);
   display: flex;
   align-items: center;
-
 }
+
+/* .checkbox:checked ~ .checkbox-icon{
+  opacity: 1;
+} */
 
 .checkbox-label .part {
   color: var(--acent-color);
@@ -870,15 +878,11 @@ address.footer-adress {
 
 .checkbox-icon{
   position: absolute;
-  /* visibility: hidden; */
   width: 16px;
   height: 15px;
+ 
 }
 
-
-.checkbox:checked + .checkbox-icon{
-  fill: var(--time-duration);
-}
 
 .form-button {
   display: inline-block;
@@ -903,9 +907,6 @@ address.footer-adress {
 .form-button:focus {
   background: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-
-.form-subscribe {
 }
 
 .subscribe-folder {

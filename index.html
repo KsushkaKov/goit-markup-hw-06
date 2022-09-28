@@ -451,38 +451,41 @@
             </svg></button>
             <p class="form-title">Залиште свої дані, ми вам передзвонимо</p>
             <form action="" class="form">
-              <div class="form-field">
+              <ul>
+              <li class="form-field">
                 <label for="name" class="form-label">Ім'я
                 <input type="text" class="form-input" name="name" id="name" placeholder="">
                 <svg class="vector-icon">
                   <use href="./images/icons.svg#icon-vector"></use>
                 </svg></label>
-            </div>
-            <div class="form-field">
+              </li>
+            <li class="form-field">
                 <label for="phone" class="form-label">Телефон</label>         
                 <input type="tel" class="form-input" name="phone" id="phone" placeholder="">
             <svg class="vector-icon" >
                   <use href="./images/icons.svg#icon-phone"></use>
                 </svg>
-              </div>
-            <div class="form-field">
+              </li>
+            <li class="form-field">
                 <label for="email" class="form-label">Пошта</label>
                 <input type="email" class="form-input" name="email" id="email" placeholder="">
              <svg class="vector-icon" >
                   <use href="./images/icons.svg#icon-email"></use>
                 </svg>
-              </div>
-            <div class="form-field">
+              </li>
+            <li class="form-field">
                 <label for="text" class="form-label">Коментар</label>
-                <input type="text" class="form-input text" name="text" id="text" placeholder="Введіть текст">
-            </div>
+                <!-- <input type="text" class="form-input text" name="text" id="text" placeholder="Введіть текст"> -->
+                <textarea name="text" id="text"  placeholder="Введіть текст"  class="form-input text"></textarea>
+            </li>
+            </ul>
             <div class="form-checkbox">
               <label for="offer" class="checkbox-label">
                 <svg class="checkbox-icon" >
-                      <use href="./images/icons.svg#icon-checked"></use>
+                      <use href="./images/icons.svg#icon-iconcheck"></use>
                     </svg>
-            <input type="checkbox" class="checkbox" name="topic" id="offer">
-            <span class="icon"></span>Погоджуюся з розсилкою та приймаю <span class="checkbox-label part">Умови договору</span></label>
+                <input type="checkbox" class="checkbox" name="topic" id="offer">
+                <span class="icon"></span>Погоджуюся з розсилкою та приймаю <a href="#" class="checkbox-label part">Умови договору</a></label>
             </div>
           </form>
            <button class="form-button" type="button">Відправити</button>
