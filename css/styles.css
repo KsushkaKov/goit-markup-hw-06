@@ -747,7 +747,7 @@ address.footer-adress {
 }
 
 .close-icon:hover,
-.close-icon:focus{
+.close-icon:focus {
   fill: var(--acent-color);
 }
 
@@ -759,7 +759,6 @@ address.footer-adress {
 
 .form-field {
   position: relative;
- 
 }
 
 .form-label {
@@ -813,9 +812,8 @@ address.footer-adress {
   width: 18px;
   height: 18px;
   transform: translateY(-4px);
-   transition: fill var(--time-duration);
+  transition: fill var(--time-duration);
 }
-
 
 .form-input.text {
   height: 120px;
@@ -823,19 +821,19 @@ address.footer-adress {
   font-size: 12px;
   line-height: 1.16;
   letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
+  color: var(--main-color-text);
 }
 
 .form-field:focus-within > .vector-icon {
   fill: var(--acent-color);
 }
 
-.checkbox{
+.checkbox {
   appearance: none;
   position: absolute;
 }
 
-.icon{
+.icon {
   display: inline-block;
   margin-right: 7px;
   width: 16px;
@@ -844,13 +842,13 @@ address.footer-adress {
   border-radius: 2px;
 }
 
-.checkbox:checked + .icon{
+.checkbox:checked + .icon {
   border: 0.2px solid var(--white-color);
   background-color: var(--acent-color);
- background-size: contain;
- background-origin: border-box;
- border-radius: 2px;
- background-image: url('../images/iconcheck.svg');
+  background-size: contain;
+  background-origin: border-box;
+  border-radius: 2px;
+  background-image: url("../images/iconcheck.svg");
 }
 
 .form-checkbox {
@@ -877,17 +875,15 @@ address.footer-adress {
   text-decoration: underline;
 }
 
-.checkbox-icon{
+.checkbox-icon {
   position: absolute;
   width: 16px;
   height: 15px;
- 
 }
 
-
 .form-button {
-  display: inline-block;
-  margin-left: 164px;
+  display: block;
+  margin: 0 auto;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
@@ -956,7 +952,7 @@ address.footer-adress {
   color: rgba(255, 255, 255, 0.6);
   font-size: 16px;
   line-height: 1.25;
-  padding: 15px 295px 15px 16px;
+  padding: 15px 16px;
 }
 
 .subscribe-icon {
