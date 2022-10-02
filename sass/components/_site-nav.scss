@@ -1,0 +1,47 @@
+.site-nav__list {
+  display: flex;
+  position: relative;
+}
+
+.site-nav__item {
+  margin-right: 50px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.site-nav__link {
+  text-decoration: $textDecoration;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $mainColorText;
+  padding: 32px 0;
+  transition: color $timeDuration;
+
+  &:hover,
+  &:focus {
+    color: $acentColor;
+  }
+}
+
+.site-nav__link--acent {
+  color: $acentColor;
+  position: relative;
+
+  &:hover,
+  &:focus {
+    color: $blackColor;
+  }
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $acentColor;
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+  }
+}

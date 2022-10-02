@@ -1,0 +1,10 @@
+.logo--footer {
+  display: inline-block;
+  color: $whiteColor;
+  transition: color var(--time-duration);
+
+   &:hover,
+   &:focus {
+     color: $acentColor;
+   }
+}

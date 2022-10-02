@@ -1,0 +1,45 @@
+.hero-section {
+  background-color: $headerFooterColor;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/background.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  padding: 200px 0;
+  max-width: 1600px;
+  margin: 0 auto;
+  height: 600px;
+}
+
+.hero-section__title {
+  font-weight: 900;
+  font-size: 44px;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  line-height: 1.36;
+  width: 696px;
+  margin: 0 auto;
+}
+
+.hero-section__button {
+  display: inline-block;
+  font-weight: $fontWeightMiddle;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  cursor: pointer;
+  padding: 10px 32px;
+  margin-top: 30px;
+  background-color: $acentColor;
+  color: $whiteColor;
+  border-radius: $borderRadius;
+  border: none;
+  font-family: "Roboto", sans-serif;
+  transition: color $timeDuration;
+}

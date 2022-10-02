@@ -1,0 +1,37 @@
+.company-adress {
+  margin-top: 20px;
+}
+
+.company-adress__item {
+  margin-bottom: 0;
+
+  &:last-child {
+    margin-bottom: 9px;
+  }
+}
+
+.company-adress__item--adress {
+  line-height: 1.71;
+  text-decoration: none;
+  font-style: normal;
+  color: $whiteColor;
+  transition: color $timeDuration;
+
+  &:hover,
+  &:focus {
+    color: $acentColor;
+  }
+}
+
+.company-adress__item--contact {
+  text-decoration: none;
+  line-height: 1.71;
+  font-style: normal;
+  color: $secondaryWhite;
+  transition: color $timeDuration;
+  
+  &:hover,
+  &:focus {
+    color: $acentColor;
+  }
+}

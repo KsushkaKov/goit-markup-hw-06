@@ -1,0 +1,32 @@
+.buttons__item {
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.buttons__list:not(:last-child) {
+  margin-right: 8px;
+}
+
+.button {
+  padding: 6px 22px;
+  background: $sectionColor;
+  border-radius: $borderRadius;
+  border: none;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  color: $mainColorText;
+  font-family: "Roboto", sans-serif;
+  cursor: pointer;
+  transition: background-color $timeDuration, color $timeDuration,
+    box-shadow $timeDuration;
+
+  &:hover,
+  &:focus {
+    background-color: $acentColor;
+    color: $sectionColor;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+  }
+}
