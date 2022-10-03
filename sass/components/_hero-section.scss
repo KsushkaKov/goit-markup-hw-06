@@ -1,4 +1,4 @@
-.hero-section {
+.hero {
   background-color: $headerFooterColor;
   background-image: linear-gradient(
       to right,
@@ -16,7 +16,7 @@
   height: 600px;
 }
 
-.hero-section__title {
+.hero__title {
   font-weight: 900;
   font-size: 44px;
   letter-spacing: 0.06em;
@@ -27,7 +27,7 @@
   margin: 0 auto;
 }
 
-.hero-section__button {
+.hero__button {
   display: inline-block;
   font-weight: $fontWeightMiddle;
   font-size: 16px;
